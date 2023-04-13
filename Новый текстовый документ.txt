@@ -1,0 +1,22 @@
+const menu=document.createElement("div");
+menu.classList.add("school")
+const school=document.querySelector(".school")
+
+const two=document.body
+two.appendChild(menu)
+
+const zagolov=document.createElement("h1");
+zagolov.textContent="FC Chelsea"
+zagolov.classList.add("chelsea");
+menu.appendChild(zagolov)
+
+const podmenu=`
+<ul class="football">
+		<li>Главная</li>
+		<li>Матчи</li>
+		<li>Новости</li>
+		<li>Состав</li>
+		<li>Форум</li>
+	</ul>`
+menu.innerHTML=podmenu
+podmenu.insertAdjacentElement("beforebegin",zagolov)
